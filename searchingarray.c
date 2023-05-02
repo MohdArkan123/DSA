@@ -1,27 +1,26 @@
-#include <stdio.h>    
-void main ()    
-{  
-    int a=200;
-    int w=4;  
-    int arr[3][3],i,j;     
-    for (i=0;i<3;i++)    
-    {    
-        for (j=0;j<3;j++)    
-        {    
-            printf("Enter a[%d][%d]: ",i,j);                
-            scanf("%d",&arr[i][j]);    
-        }  
-    
-          
-    }    
-    printf("\n printing the elements ....\n");     
-    for(i=0;i<3;i++)    
-    {    
-        printf("\n");    
-        for (j=0;j<3;j++)    
-        {    
-            printf("%d\t",arr[i][j]);    
-        }    
-    }  
+// Online C compiler to run C program online
+#include <stdio.h>
 
-}    
+int main() {
+    // Write C code here
+    int arr[5]={2,3,4,5,6};
+    int a,i;
+    int flag=0;
+    printf("enter number=");
+    scanf("%d",&a);
+    for(i=0;i<5;i++){
+        if(arr[i]==a){
+            flag=1;
+            break;
+        }
+       
+    }
+    if(flag==1){
+        printf("%d",i);
+    }
+    else{
+        printf("not found");
+    }
+
+    return 0;
+}
